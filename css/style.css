@@ -37,10 +37,10 @@ h2 {font-size: 50px;}
   max-width: var(--width-content);
 } 
 
-/* .color-green {
-  background-color: var(--color-verde);
+.color-brown {
+  background-color: var(--color-section-y-footer);
   color: white;
-} */
+} 
 
 html {
   scroll-behavior: smooth;
@@ -68,7 +68,7 @@ header img {
 nav {
   position: sticky;
   top: 0;
-  background-color: var(--color-verde);
+  background-color: var(--color-barra-nav);
   z-index: 2;
   margin-top: -5px;
 }
