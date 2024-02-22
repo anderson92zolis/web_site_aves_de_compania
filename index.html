@@ -1,214 +1,217 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Etiquetas para el SEO  -->
+    <meta name="author" content="Kevin" />
+    <meta
+      name="description"
+      content="Aves exóticas de compañía en adopción y aves silvestres que se pueden tener como mascotas. Encuentra información sobre cuidados, alimentación y más."
+    />
+    <meta
+      name="keywords"
+      content="aves exóticas, aves silvestres, adoptar aves, zoológico, cuidados aves, alimentación aves, ninfas, agapornis"
+    />
+    <meta name="copyright" content="Kevin" />
+    <meta name="robots" content="index, follow" />
 
-  <!-- Etiquetas para el SEO  -->
-  <meta name="author" content="Kevin">
-  <meta name="description"
-    content="Aves exóticas de compañía en adopción y aves silvestres que se pueden tener como mascotas. Encuentra información sobre cuidados, alimentación y más.">
-  <meta name="keywords"
-    content="aves exóticas, aves silvestres, adoptar aves, zoológico, cuidados aves, alimentación aves, ninfas, agapornis">
-  <meta name="copyright" content="Kevin">
-  <meta name="robots" content="index, follow">
+    <!-- Etiquetas básicas  -->
 
+    <title>Aves de compañia</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- favicon a la pestaña de navegador -->
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon" alt="lorito" />
+  </head>
 
-  <!-- Etiquetas básicas  -->
-  <title>Aves de compañia</title>
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="icon" href="img/favicon.ico" type="image/x-icon" alt="lorito" />
-</head>
+  <!-- creación de la parte del body: vamos a trabajar con HEADER, NAV, MAIN -->
 
-<body>
-  <header>
-    <picture>
-      <source srcset="img/index_500px" media="(max-width: 500px)" />
-      <source srcset="img/index_800px.avif" media="(max-width: 800px)" />
-      <source srcset="img/index_1400px.avif" media="(max-width: 1400px)" />
-      <img src="img/header.png" alt="Cabecera de la página" />
-    </picture>
+  <body>
+    <header>
+      <!-- creación de la HAADER: Las imágenes cambian al hacer la pantalla más pequeñas o grande -->
+      <picture>
+        <source srcset="img/500.avif" media="(max-width: 500px)" />
+        <source srcset="img/1000.avif" media="(max-width: 1000px)" />
+        <source srcset="img/1920.avif" media="(max-width: 1920px)" />
+        <img src="img/header.png" alt="Cabecera de la página" />
+      </picture>
+      <div class="title-aves">
+        <h1>Aves de compañias</h1>
+      </div>
+    </header>
 
-    <div class="title-caffe">
-      <h1>Cafés del Món</h1>
-    </div>
-  </header>
+    <!-- parte del panel de navegacion este  es un menú fijo  y reeedirije a otras páginas -->
+    <nav>
+      <ul class="nav-ul width-content">
+        <li><a href="index.html">Inici</a></li>
+        <li><a href="ninfas.html">Ninfas</a></li>
+        <li><a href="agapornis.html">Agapornis</a></li>
+        <li><a href="cuidados.html">Cuidados</a></li>
+        <li><a href="alimentación.html">Alimentación</a></li>
+      </ul>
+    </nav>
 
-  <nav>
+    <!--  PARTE PRINCIPAL DE LA WEB -->
 
-    <ul class="nav-ul width-content">
-      <li class="text-decore"><a href="index.html">Inici</a></li>
-      <li><a href="ninfas.html">Ninfas</a></li>
-      <li><a href="agapornis.html">Agapornis</a></li>
-      <li><a href="cuidados.html">Cuidados</a></li>
-      <li><a href="alimentación.html">Alimentación</a></li>
-    </ul>
-  </nav>
+    <main>
+      <!-- El main tiene tres secciones que se posicionan en bloques verticals -->
 
-  <main>
-    <!-- section 1 -->
+      <!-- section 1  tiene flexbox:row  and justify-content: space-between que pocicional de manera horizontal y espaciado entre elementos  -->
+      <section>
+        <article class="width-content">
+          <img src="img/papagayo.avif" alt="papagayo amazónico" />
+          <div>
+            <h2>¡Son súper fascinantes!</h2>
 
-    <section>
-      <article class="width-content">
-        <img src="img/papagayo.avif" alt="taza caffe" />
-        <div>
-          <h2>¡Son súper fascinantes!</h2>
-          <p>
-            Las aves son seres fascinantes que despiertan admiración. Su
-            capacidad de vuelo, sus variados colores y sus melodiosos cantos
-            las convierten en criaturas únicas. Su adaptabilidad a diferentes
-            entornos y su diversidad de especies son asombrosas.
-          </p>
-          <p>
-            Observar su comportamiento, desde construir nidos hasta migrar
-            largas distancias, nos muestra la maravilla de la naturaleza y nos
-            invita a apreciar la belleza y singularidad de las aves.
-          </p>
-        </div>
-      </article>
-    </section>
-    <!-- section 2 -->
-    <section class="color-brown">
-      <article class="width-content">
-
-        <div>
-          <h2>Aprende la forma de cuidarlos</h2>
-          <p>
-            Cuidar aves es una experiencia fascinante y gratificante. Requiere
-            responsabilidad, paciencia y amor por estos seres alados. Observar
-            su comportamiento, aprender sobre sus necesidades y brindarles
-            cuidados adecuados nos conecta con la naturaleza.
-          </p>
-          <p>
-            La interacción diaria, el vínculo que se crea y el privilegio de
-            ser testigo de su belleza y singularidad hacen que cuidar aves sea
-            una experiencia verdaderamente interesante e enriquecedora.
-          </p>
-        </div>
-        <img src="img/disparo-vertical-adorable-cockatiel.avif" alt="taza caffe" />
-      </article>
-    </section>
-
-    <!-- section aves comunes -->
-
-    <section>
-      <article id="opinions" class="width-content">
-        <h2> clients opinen</h2>
-        <div class="opinions-container">
-          <div class="comment">
-
-            <blockquote class="comment-blockquote">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia,
-              suscipit?
-            </blockquote>
-            <cite class="author-comment">Juli Cesar</cite>
-
+            <p>
+              Las aves son seres fascinantes que despiertan admiración. Su
+              capacidad de vuelo, sus variados colores y sus melodiosos cantos
+              las convierten en criaturas únicas. Su adaptabilidad a diferentes
+              entornos y su diversidad de especies son asombrosas.
+            </p>
+            <p>
+              Observar su comportamiento, desde construir nidos hasta migrar
+              largas distancias, nos muestra la maravilla de la naturaleza y nos
+              invita a apreciar la belleza y singularidad de las aves.
+            </p>
           </div>
-          <div class="comment">
-            <blockquote class="comment-blockquote">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia,
-              suscipit?
-            </blockquote>
-            <cite class="author-comment">Juli Cesar</cite>
+        </article>
+      </section>
 
+      <!-- section 2  igual que la seccion 1 pero este se añadre el color respectivo (tiene flexbox:row  and justify-content: space-between que pocicional de manera horizontal y espaciado entre elementos)  -->
+      <section class="color-brown">
+        <article class="width-content">
+          <div>
+            <h2>Aprende la forma de cuidarlos</h2>
+            <p>
+              Cuidar aves es una experiencia fascinante y gratificante. Requiere
+              responsabilidad, paciencia y amor por estos seres alados. Observar
+              su comportamiento, aprender sobre sus necesidades y brindarles
+              cuidados adecuados nos conecta con la naturaleza.
+            </p>
+            <p>
+              La interacción diaria, el vínculo que se crea y el privilegio de
+              ser testigo de su belleza y singularidad hacen que cuidar aves sea
+              una experiencia verdaderamente interesante e enriquecedora.
+            </p>
           </div>
-        </div>
+          <img
+            src="img/disparo-vertical-adorable-cockatiel.avif"
+            alt="taza caffe"
+          />
+        </article>
+      </section>
+
+      <!-- section aves comunes -->
+
+      <section>
+        <article id="aves-comunes" class="width-content">
+          <h2>Las aves exóticas mas comunes</h2>
+          <div class="descripcion-ave-container">
+            <div class="comment">
+              <div>
+                <h3>Ninfas</h3>
+              </div>
+              <div>
+                <figure>
+                  <img src="img/carolina.avif" alt="Trulli" />
+                  <figcaption>
+                    <p>
+                      Los Nymphicus hollandicus, también conocidos como cacatúas
+                      ninfa, son aves carismáticas y encantadoras, apreciadas
+                      por su personalidad juguetona y su característico copete.
+                    </p>
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+            <div class="comment">
+              <div>
+                <h3>Agapornis</h3>
+              </div>
+              <div>
+                <figure>
+                  <img src="img/agapornis.avif" alt="Trulli" />
+                  <figcaption>
+                    <p>
+                      Los Agapornis, también conocidos como inseparables, son
+                      aves sociales y amorosas, reconocidas por su fuerte
+                      vínculo de pareja.
+                    </p>
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+
+    <footer class="color-brown">
+      <article class="footer-container width-content">
+        <!-- LINKS USEFULL -->
+        <section class="footer-section links">
+          <p class="hsg-footer__nav-heading">Enlaces útils</p>
+          <ul>
+            <li class="hsg-footer__nav-item">
+              <a class="ga_nav_link" href=""> Notícias</a>
+            </li>
+            <li class="hsg-footer__nav-item">
+              <a class="ga_nav_link" href=""> Nuestro productos</a>
+            </li>
+            <li class="hsg-footer__nav-item">
+              <a class="ga_nav_link" href=""> Tratamiento de aves</a>
+            </li>
+            <li class="hsg-footer__nav-item">
+              <a class="ga_nav_link" href=""> Afiliados</a>
+            </li>
+          </ul>
+        </section>
+        <!-- Adoptar -->
+        <section class="footer-section buys">
+          <p class="hsg-footer__nav-heading">Adoptar</p>
+          <ul>
+            <li class="hsg-footer__nav-item">
+              <a class="ga_nav_link" href=""> Criaderos</a>
+            </li>
+            <li class="hsg-footer__nav-item">
+              <a class="ga_nav_link" href=""> Casas de acogida</a>
+            </li>
+            <li class="hsg-footer__nav-item">
+              <a class="ga_nav_link" href=""> Particulares</a>
+            </li>
+          </ul>
+        </section>
+
+        <!-- conoce aves -->
+        <section class="footer-section know">
+          <p class="hsg-footer__nav-heading">Conoce las aves</p>
+          <ul>
+            <li class="hsg-footer__nav-item">
+              <a class="ga_nav_link" href=""> Zoológico Barcelona </a>
+            </li>
+            <li class="hsg-footer__nav-item">
+              <a class="ga_nav_link" href=""> Videos </a>
+            </li>
+          </ul>
+        </section>
+
+        <!-- Contact -->
+        <section class="footer-section contacts">
+          <p class="hsg-footer__nav-heading">Contacto</p>
+          <a class="format-link" href="mailto:info@cafesdelmon.com"
+            >info@avesdecomania.como</a
+          >
+          <div class="logos">
+            <img src="logos/facebook.png" alt="Logo de Facebook" />
+            <img src="logos/twitter.png" alt="Logo de Twitter-X" />
+            <img src="logos/instagram.png" alt="Logo d'Instagram" />
+          </div>
+        </section>
       </article>
-    </section>
-  </main>
-
-  <!-- FOOTER -->
-  
-
-  <footer class="color-brown">
-    
-    <article class="footer-container width-content">
-      
-      <!-- LINKS USEFULL -->
-      <section class="footer-section links">
-        <p class="hsg-footer__nav-heading">Enlaces útils</p>
-        <ul>
-          <li class="hsg-footer__nav-item">
-            <a class="ga_nav_link" href=""> Notícias</a>
-          </li>
-          <li class="hsg-footer__nav-item">
-            <a class="ga_nav_link" href=""> Nuestro productos</a>
-          </li>
-          <li class="hsg-footer__nav-item">
-            <a class="ga_nav_link" href=""> Tratamiento de aves</a>
-          </li>
-          <li class="hsg-footer__nav-item">
-            <a class="ga_nav_link" href=""> Afiliados</a>
-          </li>
-        </ul>
-      </section>
-      <!-- Adoptar -->
-      <section class="footer-section buys">
-        <p class="hsg-footer__nav-heading">Adoptar</p>
-        <ul>
-          <li class="hsg-footer__nav-item">
-            <a class="ga_nav_link" href=""> Criaderos</a>
-          </li>
-          <li class="hsg-footer__nav-item">
-            <a class="ga_nav_link" href=""> Casas de acogida</a>
-          </li>
-          <li class="hsg-footer__nav-item">
-            <a class="ga_nav_link" href=""> Particulares</a>
-          </li>
-        </ul>
-      </section>
-
-      <!-- conoce aves -->
-      <section class="footer-section know">
-        <p class="hsg-footer__nav-heading">Conoce las aves</p>
-        <ul>
-          <li class="hsg-footer__nav-item">
-            <a class="ga_nav_link" href=""> Zoológico Barcelona </a>
-          </li>
-          <li class="hsg-footer__nav-item">
-            <a class="ga_nav_link" href=""> Videos </a>
-          </li>
-        </ul>
-      </section>
-
-
-      <!-- Contact -->
-      <section class="footer-section contacts">
-        <p class="hsg-footer__nav-heading">Contacto</p>
-        <a href="mailto:info@cafesdelmon.com">info@avesdecomania.como</a>
-        <div class="logos">
-          <img src="logos/facebook.png" alt="Logo de Facebook" />
-          <img src="logos/twitter.png" alt="Logo de Twitter-X" />
-          <img src="logos/instagram.png" alt="Logo d'Instagram" />
-        </div>
-      </section>
-    </article>
-  </footer>
-</body>
-
+    </footer>
+  </body>
 </html>
-
-
-<!-- 
-            
-            
-            
-          
-            
-         
-          <h2>Las aves exóticas mas comunes</h2>          
-              <h3>Ninfas</h3>            
-              <p>
-                Los Nymphicus hollandicus, también conocidos como cacatúas
-                ninfa, son aves carismáticas y encantadoras, apreciadas por su
-                personalidad juguetona y su característico copete.
-              </p>
-           
-              <h3>Agapornis</h3>
-              <p>
-                Los Agapornis, también conocidos como inseparables, son aves
-                sociales y amorosas, reconocidas por su fuerte vínculo de
-                pareja.
-              </p>
-            -->

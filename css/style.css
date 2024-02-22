@@ -1,46 +1,61 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Shadows+Into+Light&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Shadows+Into+Light&display=swap");
 
+/* configuraciones iniciales de  css */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Lato", sans-serif;
 }
-
-p, h1,
-h2, h3 {
-  font-family: "Shadows Into Light", cursive;;
+h1,
+h2,
+h3 {
+  font-family: "Shadows Into Light", cursive;
 }
 
+h1 {
+  font-size: 9vw;
+  color: var(--color-section-y-footer);
+}
 
-h2 {font-size: 50px;}
+h2 {
+  font-size: 3.5em;
+  color: #a39d5c;
+}
 
+h3 {
+  font-size: 2.5em;
+  color: #d1ca78;
+}
 
+main p {
+  font-size: 1.25em;
+  color: #3d3b22;
+}
 
+footer p li {
+  font-size: 1em;
+  color: #3d3b22;
+}
 
-/* Color verde para el menú y footer */
-
+/* creación de variables en Css */
 :root {
-  /* --color-verde: #053617;
   --width-content: 1200px;
-  --color-emphasis:  rgb(58, 240, 17); */
 
   --color-barra-nav: #d6cf7bda;
-  --color-fuente-efecto-hoover:  #ffffff4d;
-  --width-content: 1200px;
+  --color-fuente-efecto-hoover: #ffffff4d;
   --color-section-y-footer: #eec886c2;
-
 }
 
+/* tamaño que utilizarán los etiquetas que utilizen esta clase */
 .width-content {
   margin: 0 auto;
   max-width: var(--width-content);
-} 
+}
 
 .color-brown {
   background-color: var(--color-section-y-footer);
-  color: white;
-} 
+}
 
 html {
   scroll-behavior: smooth;
@@ -49,20 +64,19 @@ body {
   background-size: cover;
 }
 
-
-
 /* HEADER */
 header img {
   width: 100%;
 }
 
-.title-caffe {position: absolute;
-  top: 15%;
-  right: 10% ;  
+.title-aves {
+  position: absolute;
+  top: 25%;
+  right: 20%;
   color: var(--color-section-y-footer);
   width: 50vw;
+  font-size: 50px;
 }
-
 
 /* NAV */
 nav {
@@ -79,26 +93,21 @@ nav {
   padding: 30px;
 }
 
-.nav-ul>li {
+.nav-ul > li {
   list-style: none;
   padding: 20px;
-  color: white;
 }
 
-.nav-ul>li:hover {
+.nav-ul > li:hover {
   color: black;
-  background-color: var(--color-emphasis);
+  background-color: var(--color-fuente-efecto-hoover);
   border-radius: 10px;
 }
 
-.nav-ul>li>a {
+.nav-ul > li > a {
   text-decoration: none;
   color: inherit;
   font-size: 1.5rem;
-}
-
-.text-decore {
- text-decoration: overline;
 }
 
 /*  main  content container */
@@ -122,78 +131,69 @@ article div {
   padding: 0 5%;
 }
 
-article img, video {
-  
-  max-width: 50%;
+article img {
+  max-width: 100%;
 }
 
-/* section green */
+/* aves-comunes-section */
 
-#section-green {
-  background-color: var(--color-verde);
-}
-
-/* opinions-section */
-
-#opinions {
+#aves-comunes {
   display: flex;
   flex-direction: column;
-  
-  padding: 10px 0;
+  padding: 20px 0;
 }
 
-#opinions > h2 {
-  margin: 20px 0;
+#aves-comunes > h2 {
+  margin: 10px 0;
   text-align: center;
 }
 
-.opinions-container {
+.comment {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+.descripcion-ave-container {
   display: flex;
   flex-direction: row;
-  align-items: start;
-
+  justify-content: space-between;
 }
 
-.comment-blockquote {
-  text-align: justify;
-  font-style: italic;
-  font-size: 30px;
-}
-
-.author-comment {
-  padding-bottom: 30px;
-  margin-right: 0;
-  color: red;
-  text-align: end;
-  font-size: 20px;
-}
+.descripcion-ave-container img {
+ width: 100%;
+ 
+} 
 
 /* footer */
 
-
-
 .footer-container {
-  background-color: var(--color-verde);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   gap: 10px;
-  
- }
+}
 
-
-
-.logos  {
+.logos {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   padding: 0;
-
 }
-.contacts>div>img {
-  width: 10px;
+
+.contacts > div > img {
+  padding-top: 5px;
+  width: 20px;
 }
 
 .hsg-footer__nav-item {
   list-style-type: none;
-} 
+}
+
+a.ga_nav_link,
+.format-link {
+  size: 1em;
+  color: #3d3b22;
+  text-decoration: none;
+}
